@@ -1,10 +1,10 @@
 # Text to Magic
 
-This app lets you demo Twilio's Programmable Messaging with some pizazz :). 
+This app is forked from the demo of Ankur, but i add WhatsApp as channel and translate to spanish 
 
-In the end, you'll create a live web page that reacts to incoming text messages with a fun animation on the screen. This combines Twilio's SMS product along with our serverless infrastructure to host the page.
+In the end, you'll create a live web page that reacts to incoming whatsapp  with a fun animation on the screen. This combines Twilio's SMS and whatsapp product along with our serverless infrastructure to host the page.
 
-Try it yourself at: https://ankur-6728.twil.io/index.html
+
 
 ![Demo](demo.gif)
 
@@ -12,12 +12,13 @@ Try it yourself at: https://ankur-6728.twil.io/index.html
 
 ### Twilio Account
 
-You'll need a Twilio Account for this project. You can use my referral code to get $10 credit when you sign up and upgrade your account. www.twilio.com/referral/EMipQ8. You will be able to use a free Twilio trial account for this project. 
+You'll need a Twilio Account for this project.. 
 
 ### Phone Number
 
-Provision a phone number to use inside your Twilio Account following these steps: https://support.twilio.com/hc/en-us/articles/223135247-How-to-Search-for-and-Buy-a-Twilio-Phone-Number-from-Console
+Provision a phone number to use inside your Twilio Account following these steps: 
 
+WhatsApp-->
 ## Deploying this project
 
 ### Step 1: Create a Function service.
@@ -30,7 +31,7 @@ In the service, find `Environment Variables` in the bottom-left side and set the
 
 | Variable              | Description | Required |
 | :-------------------- | :----------------------------------------------------- | :-- |
-| `TWILIO_PHONE_NUMBER` | Your Twilio phone number in E.164 format | Yes |
+| `TWILIO_PHONE_NUMBER` | Your Twilio phone number for whatsapp it should have the following structure whatsapp:+number in E.164 format | Yes |
 
 
 ### Step 3: Update your Function service's dependencies.
